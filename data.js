@@ -40,12 +40,12 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Weather Dashboard",
+    title: "Create Post",
     description:
-      "A clean dashboard that shows live weather and forecasts for any city you search.",
-    tags: ["JavaScript", "REST API", "Chart.js"],
-    link: "https://example.com/project-three",
-    repo: "https://github.com/yourusername/project-three",
+      "Create Post is a modern web application developed with Vanilla JavaScript that enables users to create and publish posts instantly.",
+    tags: ["JavaScript", "HTMl", "CSS"],
+    link: "https://anilverma-dev.github.io/Create-Post/",
+    repo: "https://github.com/anilverma-dev/Create-Post",
   },
   {
     id: 4,
