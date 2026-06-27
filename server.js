@@ -6,12 +6,6 @@ import express from "express";
 import cors from "cors";
 import { Resend } from "resend";
 import { profile, projects } from "./data.js";
-console.log(
-  "PROJECTS LOADED:",
-  projects.length,
-  "projects. First title:",
-  projects[0].title,
-);
 
 const app = express();
 const PORT = process.env.PORT || 5000;
