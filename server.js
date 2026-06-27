@@ -6,6 +6,12 @@ import express from "express";
 import cors from "cors";
 import { Resend } from "resend";
 import { profile, projects } from "./data.js";
+console.log(
+  "PROJECTS LOADED:",
+  projects.length,
+  "projects. First title:",
+  projects[0].title,
+);
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -52,7 +58,9 @@ app.post("/api/contact", async (req, res) => {
   const { name, email, message } = req.body;
 
   if (!name || !email || !message) {
-    return res.status(400).json({ error: "Name, email and message are all required" });
+    return res
+      .status(400)
+      .json({ error: "Name, email and message are all required" });
   }
 
   console.log("New contact form submission:", { name, email, message });
@@ -60,11 +68,12 @@ app.post("/api/contact", async (req, res) => {
   // If no API key is configured yet, don't fail silently — tell the developer clearly.
   if (!resend) {
     console.warn(
-      "RESEND_API_KEY is not set — email was NOT sent. Add it to backend/.env to enable real emails."
+      "RESEND_API_KEY is not set — email was NOT sent. Add it to backend/.env to enable real emails.",
     );
     return res.status(201).json({
       success: true,
-      message: "Thanks for reaching out! (Note: email sending isn't configured yet.)",
+      message:
+        "Thanks for reaching out! (Note: email sending isn't configured yet.)",
     });
   }
 
@@ -86,10 +95,20 @@ app.post("/api/contact", async (req, res) => {
       `,
     });
 
-    res.status(201).json({ success: true, message: "Thanks for reaching out! I'll reply soon." });
+    res
+      .status(201)
+      .json({
+        success: true,
+        message: "Thanks for reaching out! I'll reply soon.",
+      });
   } catch (err) {
     console.error("Failed to send email via Resend:", err);
-    res.status(500).json({ error: "Message received, but the email couldn't be sent. Please try again." });
+    res
+      .status(500)
+      .json({
+        error:
+          "Message received, but the email couldn't be sent. Please try again.",
+      });
   }
 });
 

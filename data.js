@@ -11,7 +11,7 @@ export const profile = {
   about:
     "I'm a web developer who enjoys turning ideas into working products — clean UIs on the frontend, solid APIs on the backend. I like learning new tools, fixing tricky bugs, and shipping things that people actually use.",
   skills: ["JavaScript", "React", "HTML & CSS", "Github"],
-  
+
   social: {
     github: "https://github.com/anilverma-dev",
     linkedin: "https://linkedin.com/in/anil-verma-6a2671359",
@@ -22,12 +22,12 @@ export const profile = {
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Store",
+    title: "Sadhna Report",
     description:
-      "A full-stack online store with cart, checkout, and an admin panel to manage products.",
-    tags: ["React", "Node.js", "MongoDB"],
-    link: "https://example.com/project-one",
-    repo: "https://github.com/yourusername/project-one",
+      "A full-stack web application designed to help users build discipline and consistently track their daily spiritual routines. The app gamifies daily habits by automatically evaluating tasks, awarding points for consistency, and penalizing unproductive time.",
+    tags: ["React", "Node.js", "MongoDB", "Express.js"],
+    link: "http://localhost:5173",
+    repo: "https://github.com/anilverma-dev/Sadhna-Report",
   },
   {
     id: 2,
