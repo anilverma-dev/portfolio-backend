@@ -31,19 +31,19 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Task Manager App",
+    title: "Music-Player",
     description:
-      "A drag-and-drop task board with real-time updates, built for small teams.",
-    tags: ["React", "Express", "Socket.io"],
-    link: "https://example.com/project-two",
-    repo: "https://github.com/yourusername/project-two",
+      "Music Player is a fully interactive music streaming application built using HTML, CSS, and Advanced JavaScript (ES6+). It provides a seamless video and audio playback experience with features such as play, pause, next/previous track navigation, progress control, Speed control, volume adjustment, and dynamic playlist management.",
+    tags: ["JavaScript", "HTMl", "CSS"],
+    link: "https://anilverma-dev.github.io/Music-Player/",
+    repo: "https://github.com/anilverma-dev/Music-Player",
   },
   {
     id: 3,
     title: "Create Post",
     description:
-      "Create Post is a modern web application developed with Vanilla JavaScript that enables users to create and publish posts instantly.",
-    tags: ["JavaScript", "HTMl", "CSS"],
+      "Create Post is a modern web application developed with React and JavaScript that enables users to create and publish posts instantly.",
+    tags: ["React","JavaScript", "HTMl", "CSS"],
     link: "https://anilverma-dev.github.io/Create-Post/",
     repo: "https://github.com/anilverma-dev/Create-Post",
   },
