@@ -26,9 +26,9 @@ export const projects = [
     description:
       "A full-stack web application designed to help users build discipline and consistently track their daily spiritual routines. The app gamifies daily habits by automatically evaluating tasks, awarding points for consistency, and penalizing unproductive time.",
     tags: ["React", "Node.js", "MongoDB", "Express.js"],
-    link: " https://anilverma-dev.github.io/Sadhna-Report/",
-    repoFrontend: "https://anilverma-dev.github.io/Sadhna-Report/",
-    repoBackend: "https://anilverma-dev.github.io/sadhna-backend/", 
+    link: " https://sadhna-report.netlify.app",
+    repoFrontend: "https://github.com/anilverma-dev/Sadhna-Report",
+    repoBackend: "https://github.com/anilverma-dev/sadhna-backend", 
   },
   {
     id: 2,
